@@ -4,6 +4,18 @@ Auto-generated from conventional commits.
 
 ### 2026-06-30
 
+fix: keep layout LTR when switching languages
+
+### 2026-06-30
+
+chore: update CI status
+
+### 2026-06-30
+
+chore: update changelog
+
+### 2026-06-30
+
 refactor: simplify footer text
 
 ### 2026-06-30
@@ -181,18 +193,6 @@ chore: update changelog
 ### 2026-06-29
 
 feat: add Three.js scroll parallax background with wireframe 3D objects
-
-### 2026-06-29
-
-chore: update CI status
-
-### 2026-06-29
-
-chore: update changelog
-
-### 2026-06-29
-
-feat: add stealth mode toggle to hide personal info
 
 ### 2026-06-29
 
