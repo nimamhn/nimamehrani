@@ -44,7 +44,6 @@ export default function Home() {
 
   useEffect(() => {
     document.documentElement.lang = lang;
-    document.documentElement.dir = lang === "fa" ? "rtl" : "ltr";
     localStorage.setItem("site_lang", lang);
   }, [lang]);
 
