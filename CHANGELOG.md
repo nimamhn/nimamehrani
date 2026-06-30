@@ -4,6 +4,18 @@ Auto-generated from conventional commits.
 
 ### 2026-06-30
 
+refactor: simplify footer text
+
+### 2026-06-30
+
+chore: update CI status
+
+### 2026-06-30
+
+chore: update changelog
+
+### 2026-06-30
+
 fix: use next/image for basePath-aware image paths
 
 ### 2026-06-30
@@ -189,16 +201,4 @@ chore: update CI status
 ### 2026-06-29
 
 chore: update changelog
-
-### 2026-06-29
-
-feat: live activity feed and stats from Cloudflare Worker
-
-### 2026-06-29
-
-feat: add Cloudflare Worker (github-hub) for webhook processing, KV storage, and live API
-
-### 2026-06-29
-
-chore: update CI status
 
