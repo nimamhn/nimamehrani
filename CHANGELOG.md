@@ -4,6 +4,18 @@ Auto-generated from conventional commits.
 
 ### 2026-07-10
 
+feat: move to root domain, replace contact widget with React component, fix nav/contact bugs
+
+### 2026-07-10
+
+chore: update CI status
+
+### 2026-07-10
+
+chore: update changelog
+
+### 2026-07-10
+
 add resume PDF
 
 ### 2026-07-10
@@ -189,16 +201,4 @@ chore: update changelog
 ### 2026-06-30
 
 feat: change site font to Vazirmatn
-
-### 2026-06-30
-
-chore: update CI status
-
-### 2026-06-30
-
-chore: update changelog
-
-### 2026-06-30
-
-feat: replace all images with fresh lively photos
 
