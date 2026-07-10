@@ -1,5 +1,5 @@
 const CACHE_NAME = 'nima-site-v1';
-const BASE = '/nimamehrani';
+const BASE = '';
 const APP_SHELL = [BASE + '/', BASE + '/manifest.webmanifest', BASE + '/favicon.ico', BASE + '/offline.html'];
 
 self.addEventListener('install', (event) => {

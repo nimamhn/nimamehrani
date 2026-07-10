@@ -97,7 +97,7 @@ export default function Home() {
 
   useEffect(() => {
     if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => navigator.serviceWorker.register("/nimamehrani/sw.js").catch(() => {}));
+      window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
     }
   }, []);
 
@@ -112,8 +112,8 @@ export default function Home() {
       <header className={`topbar${scrolled ? " scrolled" : ""}`}>
         <a href="#home" className="logo">N.Mehrani</a>
         <nav>
-          {["about", "skills", "experience", "education", "projects", "report", "contact"].map((s) => (
-            <a key={s} href={`#${s}`}>{t.nav[["About","Skills","Experience","Education","Projects","Certifications","Report","Contact"].indexOf(s.charAt(0).toUpperCase() + s.slice(1))] || s}</a>
+          {["about", "skills", "experience", "education", "projects", "certifications", "report", "contact"].map((s, i) => (
+            <a key={s} href={`#${s}`}>{t.nav[i] || s}</a>
           ))}
         </nav>
         <div className="actions">
@@ -144,7 +144,7 @@ export default function Home() {
               </Reveal>
               <Reveal delay={0.3}>
                 <div className="hero-actions">
-                  <a className="btn btn-accent" href="/nimamehrani/pdf/N.Mehrani-CV.pdf" target="_blank">
+                  <a className="btn btn-accent" href="/pdf/N.Mehrani-CV.pdf" target="_blank">
                     <i className="bi bi-download" /> {t.hero.ctaResume}
                   </a>
                   <a className="btn btn-outline" href="#contact">{t.hero.ctaHire}</a>
@@ -357,7 +357,7 @@ export default function Home() {
           <Reveal delay={0.1} style={{ marginTop: 24 }}>
             <div style={{ textAlign: "center", marginBottom: 12 }}>
               <img
-                src={`/nimamehrani/images/profile-solarized-${theme === "dark" ? "dark" : "light"}.svg`}
+                src={`/images/profile-solarized-${theme === "dark" ? "dark" : "light"}.svg`}
                 alt="3D Contribution Graph"
                 style={{ maxWidth: "100%", height: "auto", borderRadius: "var(--radius)", border: "1px solid var(--border)" }}
                 loading="lazy"
@@ -417,7 +417,6 @@ export default function Home() {
                 <div className="panel contact-side">
                   <h3><i className="bi bi-person-lines-fill" /> {t.contact.reach}</h3>
                   <ul className="contact-list">
-                    <li><i className="bi bi-telephone" /><a href="tel:+989377798775">09377798775</a></li>
                     <li><i className="bi bi-telephone" /><a href="tel:+989377798775">09377798775</a></li>
                     <li><i className="bi bi-envelope" /><a href="mailto:nimaxmehrani@gmail.com">nimaxmehrani@gmail.com</a></li>
                     <li><i className="bi bi-telegram" /><a href="https://t.me/nima4mehrani" target="_blank">Telegram: @nima4mehrani</a></li>
